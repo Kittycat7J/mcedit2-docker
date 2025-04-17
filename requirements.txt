@@ -2,8 +2,8 @@
 pyzmq==15.0.0  # v15.4.0 fails to freeze with PyInstaller - see pyinstaller/issues/2147
 pyside>=1.2.0 ; sys.platform != 'darwin'  # install this via homebrew, not visible to pip
 pyopengl==3.1.5
-ipython     
+ipython==5.10.0
 qtconsole==4.3.1
-pygments
+pygments==2.5.2
 pastebin
-raven
+raven==6.10.0
