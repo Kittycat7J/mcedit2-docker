@@ -2,15 +2,15 @@ FROM ubuntu:18.04
 
 ENV FOLDER=/opt/mcedit2
 
-# RUN set -x \
-    # && apt-get -y update \
-    # && apt-get -y install \
-    #    python-pip \
-    #    cmake \
-    #    build-essential \ 
-    #    qt4-default \
-    #    python-dev \
-    # && set +x
+RUN set -x \
+    && apt-get -y update \
+    && apt-get -y install \
+       python-pip \
+       cmake \
+       build-essential \ 
+       qt4-default \
+       python-dev \
+    && set +x
 
 RUN set -x \
    && mkdir -p ${FOLDER}/saves \
@@ -18,8 +18,8 @@ RUN set -x \
 COPY . ${FOLDER}/source
 RUN set -x \
     && cd ${FOLDER}/source/ \
-    # && pip install -r requirements.txt \
-    # && python setup.py develop \
+    && pip install -r requirements.txt \
+    && python setup.py develop \
     && set +x
 
 RUN set -x \
