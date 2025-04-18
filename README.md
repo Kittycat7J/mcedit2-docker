@@ -108,6 +108,19 @@ Example: `brew install qt` etc. or:
 
 _Note: This information is not fully tested and might not work for you_
 
+# Docker
+
+- install docker
+- clone this repository `https://github.com/Kittycat7J/mcedit2-docker.git`
+- `cd mcedit2-docker`
+- `./runMCEdit.sh <path_to_.minecraft>`
+
+
+
+
+
+
+
 # Troubleshooting
 
 - `python setup.py develop` or `build` produces the error `cannot find vcvarsall.bat` or similar.
