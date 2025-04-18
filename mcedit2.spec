@@ -42,8 +42,8 @@ if is_win:
     exclude_binaries = False
 
 if is_osx:
-    exe_name = "MCEdit 2"
-    dist_app_name = "MCEdit 2.app"
+    exe_name = "MCEdit2"
+    dist_app_name = "MCEdit2.app"
     exclude_binaries = True
 
 # --- Get version number and write to _version.py ---
@@ -206,7 +206,7 @@ if is_osx:
 else:
     shutil.copy(path.join("dist", dist_app_name), dist_folder_path)
 
-userdata_path = path.join(dist_folder_path, "MCEdit 2 Files")
+userdata_path = path.join(dist_folder_path, "MCEdit2Files")
 plugins_path = path.join(userdata_path, "plugins")
 
 os.makedirs(userdata_path)

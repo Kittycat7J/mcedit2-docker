@@ -43,11 +43,11 @@ def getUserFilesDirectory():
         exe = win32api.GetModuleFileNameW(None)
         assert os.path.exists(exe), "MCEdit executable %r does not exist! Something is very wrong." % exe
         folder = os.path.dirname(exe)
-        dataDir = os.path.join(folder, "MCEdit 2 Files")
+        dataDir = os.path.join(folder, "MCEdit2Files")
 
     else:
         folder = os.path.dirname(resources.getSrcFolder())
-        dataDir = os.path.join(folder, "MCEdit 2 Files")
+        dataDir = os.path.join(folder, "MCEdit2Files")
 
     if not os.path.exists(dataDir):
         os.makedirs(dataDir)

@@ -24,9 +24,9 @@ def getUserFilesDirectory():
 
     if resources.isSrcCheckout():
         # Source checkouts don't use the same folder as regular installs.
-        dataDir = os.path.join(os.path.dirname(resources.getSrcFolder()), "MCEdit 2 Files")
+        dataDir = os.path.join(os.path.dirname(resources.getSrcFolder()), "MCEdit2Files")
     else:
-        dataDir = os.path.expanduser(u"~/Documents/MCEdit 2 Files")
+        dataDir = os.path.expanduser(u"~/Documents/MCEdit2Files")
 
     if not os.path.exists(dataDir):
         os.makedirs(dataDir)

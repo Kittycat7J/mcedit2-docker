@@ -1,3 +1,5 @@
-from ubuntu
+FROM ubuntu
 
 RUN apt-get update && apt-get -y install x11-apps
+
+CMD [ "xeyes" ]
